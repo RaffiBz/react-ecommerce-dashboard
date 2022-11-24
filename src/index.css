@@ -1,0 +1,128 @@
+/* Product font */
+@font-face {
+  font-family: "Product";
+  src: url(../public/fonts/product-sans/PTSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Product";
+  src: url(../public/fonts/product-sans/PTSans-Bold.ttf);
+  font-weight: 700;
+}
+
+/* Inter font */
+@font-face {
+  font-family: "Inter";
+  src: url(../public/fonts/Inter/Inter-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../public/fonts/Inter/Inter-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../public/fonts/Inter/Inter-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../public/fonts/Inter/Inter-Bold.ttf);
+  font-weight: 700;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.up {
+  background-image: url("../public/images/up_arrow.png");
+}
+.down {
+  background-image: url("../public/images/down_arrow.png");
+}
+.default {
+  background-image: url("../public/images/default.png");
+}
+.up,
+.default,
+.down {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+/* modal position */
+.centerAlign {
+  left: calc(50% - 20rem);
+}
+
+/* date input */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("/public/images/icons/grid-table/calendar.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.gradient-text {
+  color: linear-gradient(
+    90deg,
+    #3fdaff 0.01%,
+    #40d2fc 23.69%,
+    #43b6fa 40.75%,
+    #4c6df5 77.43%,
+    #523ef1 100.02%
+  );
+}
+
+.gradient {
+  background: linear-gradient(
+    90deg,
+    #3fdaff 0.01%,
+    #40d2fc 23.69%,
+    #43b6fa 40.75%,
+    #4c6df5 77.43%,
+    #523ef1 100.02%
+  );
+}
+
+.linear-gradient {
+  background: linear-gradient(
+    10deg,
+    #3fdaff 0%,
+    #40d2fc 23.68%,
+    #43b6fa 40.74%,
+    #4c6df5 77.41%,
+    #523ef1 100%
+  );
+}
+
+.gradientBg {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #6e7ca7;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #6e7ca7;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+/* border dropdown */
+.css-1okebmr-indicatorSeparator {
+  display: none;
+}
